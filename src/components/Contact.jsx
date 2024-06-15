@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas"; // Importando ComputersCanvas em vez de EarthCanvas
@@ -33,25 +35,32 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Verificação se todos os campos estão preenchidos
+    if (!form.name || !form.email || !form.message) {
+      toast.error("Por favor, preencha todos os campos.");
+      return;
+    }
+
     setLoading(true);
 
     emailjs
       .send(
-        'service_mwrawyx',
-        'template_w83f29a',
+        'service_psyfmp7',
+        'template_l1fjeni',
         {
           from_name: form.name,
-          to_name: "Wallacy",
+          to_name: "AltoTech",
           from_email: form.email,
-          to_email: "wallacyfernandez@gmail.com",
+          to_email: "projetos.altotech4@gmail.com",
           message: form.message,
         },
-        'Se-juKfj2I9uliVIy'
+        'lLBzwvsiaQGANNc_H'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Obrigado. Entraremos em contato com você o mais rápido possível.");
+          toast.success("Obrigado. Entraremos em contato com você o mais rápido possível.");
 
           setForm({
             name: "",
@@ -62,16 +71,14 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ah, algo deu errado. Por favor, tente novamente.");
+          toast.error("Ah, algo deu errado. Por favor, tente novamente.");
         }
       );
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
+      <ToastContainer position="bottom-right" />
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] cont-gradient p-8 rounded-2xl'
