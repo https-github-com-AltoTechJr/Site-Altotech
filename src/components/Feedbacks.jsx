@@ -44,14 +44,14 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-tertiary rounded-[20px]`}>
+    <div className={`mt-12 bg-transparent rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-transparent rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
           <h2 className={styles.sectionHeadText}>Depoimentos</h2>
           <div className="flex items-center justify-center">
-          <p className={styles.sectionSubText}>Veja o que os clientes falam sobre nós</p>
+          <p className={styles.sectionSubText}>O que falam sobre nós</p>
         </div>
         </motion.div>
       </div>

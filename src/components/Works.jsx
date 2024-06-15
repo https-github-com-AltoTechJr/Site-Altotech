@@ -73,7 +73,7 @@ const Works = () => {
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText}`}>Projetos</h2>
         <div className="flex items-center justify-center">
-        <p className={styles.sectionSubText}>Veja algum dos nossos projetos</p>
+        <p className={styles.sectionSubText}>Alguns projetos nossos</p>
         </div>
       </motion.div>
 

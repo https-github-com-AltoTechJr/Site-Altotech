@@ -5,13 +5,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas"; // Importando ComputersCanvas em vez de EarthCanvas
+import { ComputersCanvas } from "./canvas"; 
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-//template_w83f29a
-//service_mwrawyx
-//Se-juKfj2I9uliVIy
 
 const Contact = () => {
   const formRef = useRef();
@@ -36,7 +33,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Verificação se todos os campos estão preenchidos
     if (!form.name || !form.email || !form.message) {
       toast.error("Por favor, preencha todos os campos.");
       return;
