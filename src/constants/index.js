@@ -27,35 +27,35 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "servicos",
+    title: "Serviços",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "depoimentos",
+    title: "Depoimentos",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "projetos",
+    title: "Projetos",
+  },
+  {
+    id: "contato",
+    title: "Contato",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    text: "Desenvolvimento de soluções em TI baseadas em  software",
+    link: "Saiba mais"
   },
   {
-    title: "React Developer",
-    icon: mobile,
+    text: "Informatização de processos organizacionais",
+    link: "Saiba mais"
   },
   {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Full Stack Developer",
-    icon: creator,
+    text: "Capacitações para empresas",
+    link: "Saiba mais"
   },
 ];
 

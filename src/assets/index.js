@@ -1,4 +1,4 @@
-import logo from "./wallacylogo.png";
+import logo from "./altotech-minilogo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -39,6 +39,7 @@ import prof2 from "./walber.prof.jfif";
 import prof3 from "./Matheus.prof.jfif";
 import logondop from "./nodp.png";
 import logoaltotech from "./AltoTech.png";
+import computadorVdl from "./computador-vdl.png";
 
 
 export {
@@ -80,4 +81,5 @@ export {
   prof3,
   logondop,
   logoaltotech,
+  computadorVdl,
 };
