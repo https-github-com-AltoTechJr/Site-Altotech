@@ -89,4 +89,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "Serviços");
+export default SectionWrapper(About, "Servicos");

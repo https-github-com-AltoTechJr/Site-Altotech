@@ -7,7 +7,7 @@ import {
 
 export const navLinks = [
   {
-    id: "Serviços",
+    id: "Servicos",
     title: "Serviços",
   },
   {
