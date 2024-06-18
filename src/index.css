@@ -13,6 +13,12 @@
   color-scheme: dark;
 }
 
+.custom-scrollbar {
+  scrollbar-width: thin; /* largura da barra de rolagem (auto | thin | none) */
+  scrollbar-color: #888 #0E0016; /* cor da barra de rolagem e do polegar */
+}
+
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -43,10 +49,74 @@
   );
 }
 
+.h3-with-line {
+  position: relative; /* Para permitir o posicionamento do pseudo-elemento */
+  display: inline-block; /* Para ajustar o traço ao tamanho do texto */
+}
+
+.h3-with-line::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Ajuste conforme necessário para posicionar o traço */
+  left: 10%;
+  transform: translateX(-50%);
+  width: 20%; /* Largura do traço em relação ao contêiner */
+  height: 4px; /* Altura do traço */
+  border-radius: 20px;
+  background: linear-gradient(180deg, #680BAB 1.9%, #CC0094 97.5%);
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-content{
+  width: 99.5%;
+  height: 99%;
+}
+
+.h3-R-line {
+  position: relative;
+  display: inline-block;
+}
+
+.h3-R-line::before {
+  content: "";
+  position: absolute;
+  top: 0; /* Alinha o traço ao topo do contêiner */
+  left: -10px; /* Ajuste conforme necessário para posicionar o traço */
+  width: 4px; /* Largura do traço vertical */
+  height: 100%; /* Altura do traço para cobrir a altura do contêiner */
+  border-radius: 20px;
+  background: linear-gradient(180deg, #680BAB 1.9%, #CC0094 97.5%); /* Gradiente na direção vertical */
+}
+
+
 .green-pink-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: "#680BAB";
+  background: linear-gradient(90.13deg, #680BAB 1.9%, #CC0094 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #680BAB 1.9%, #CC0094 97.5%);
+}
+
+.Dep-gradient {
+  background: "#680BAB";
+  background: linear-gradient(90.13deg, #680BAB 1.9%, #CC0094 60.5%);
+  background: -webkit-linear-gradient(-90.13deg, #3d1352, #31002e85);
+}
+
+.work-gradient {
+  background: "#680BAB";
+  background: linear-gradient(90.13deg, #680BAB 1.9%, #CC0094 60.5%);
+  background: -webkit-linear-gradient(-90.13deg, #3d1352, #31002e85);
+}
+
+.cont-gradient {
+  background: "#680BAB";
+  background: -webkit-linear-gradient(-90.13deg, #3d1352ac, #31002e85);
+}
+
+.imput-bg {
+  background: #0e001683;
 }
 
 .orange-text-gradient {
