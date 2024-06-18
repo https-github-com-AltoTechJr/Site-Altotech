@@ -12,6 +12,7 @@ module.exports = {
         "black-200": "#090325",
         "white-100": "#f3f3f3",
         purple: "#4E1352",
+        purpleclear: "#680BAB",
         darkPurple: "#0A1020",
       },
       boxShadow: {

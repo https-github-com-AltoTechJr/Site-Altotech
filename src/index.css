@@ -115,6 +115,10 @@
   background: -webkit-linear-gradient(-90.13deg, #3d1352ac, #31002e85);
 }
 
+.nav-gradient {
+  background: -webkit-linear-gradient(20deg, #4E1352, #0A1020);
+}
+
 .imput-bg {
   background: #0e001683;
 }

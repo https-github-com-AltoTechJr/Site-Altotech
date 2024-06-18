@@ -2,19 +2,30 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { computadorVdl } from "../assets";
+import { logogradient } from "../assets";
 
 const Hero = () => {
   return (
     <section
-      className={`relative w-full h-screen mx-auto bg-gradient-to-r from-purple to-darkPurple`}
+      className={`relative w-full h-screen mx-auto bg-gradient-to-r from-purple to-darkPurple rounded-br-lg rounded-bl-lg`}
     >
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} px-1 flex flex-row items-start gap-5`}
       >
-        <div className="mt-20 flex gap-14">
-          <h1 className={`${styles.heroHeadText} font-semibold text-white`}>
-            A solução em TI <br /> para você!
-          </h1>
+        <div className="mt-20 flex flex-col gap-14 sm:flex-row lg:flex-row">
+        <div>
+        <h1 className={`${styles.heroHeadText} font-semibold text-white`}>
+              A solução em TI <br /> para você!
+              <img src={logogradient} alt="Logo" className="inline-block ml-2 w-12 h-auto sm:w-14 sm:h-auto md:w-14 md:h-auto lg:w-14 lg:h-auto xl:w-16 xl:h-auto" />
+            </h1>
+            <div className="mt-4 flex gap-4">
+            <button className="px-4 py-2 text-white rounded border border-[#F5F5F5] bg-transparent hover:bg-purpleclear transition duration-300">Website</button>
+            <button className="px-4 py-2 text-white rounded border border-[#F5F5F5] bg-transparent hover:bg-purpleclear transition duration-300">Apps</button>
+            <button className="px-4 py-2 text-white rounded border border-[#F5F5F5] bg-transparent hover:bg-purpleclear transition duration-300">Hubs</button>
+
+
+            </div>
+          </div>
           <img src={computadorVdl} alt="Imagem de computador" />
         </div>
       </div>
