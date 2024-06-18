@@ -8,6 +8,7 @@ import job2 from "./trabalho2.png";
 import job3 from "./trabalho3.png";
 import logoaltotech from "./AltoTech.png";
 import computadorVdl from "./computador-vdl.png";
+import logogradient from "./logogradient.png";
 
 
 export {
@@ -21,4 +22,5 @@ export {
   job3,
   logoaltotech,
   computadorVdl,
+  logogradient,
 };

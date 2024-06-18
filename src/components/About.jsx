@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, setIsModalOpen }) => (
+const ServiceCard = ({index, title}) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -30,7 +30,7 @@ const ServiceCard = ({ index, title, setIsModalOpen }) => (
           style={{ width: "100%", height: "6vh" }}
         >
           <button
-            onClick={() => setIsModalOpen(true)}
+            onClick={() => window.location.href = '#Contato'}
             className="bg-tertiary text-white w-full h-full flex justify-center items-center rounded-[10px]"
             style={{ width: "99%", height: "95%" }}
           >
@@ -82,29 +82,11 @@ const About = () => {
             key={service.title}
             index={index}
             title={service.title}
-            setIsModalOpen={() => handleOpenModal(index)}
           />
         ))}
       </div>
-
-      {openModalIndex !== -1 && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="green-pink-gradient p-36 rounded-md text-center w-1/2 relative">
-            <div className="bg-tertiary absolute inset-0 m-auto modal-content rounded-md">
-              <button
-                onClick={handleCloseModal}
-                className="absolute top-2 right-2 text-white-600 hover:text-gray-800"
-              >
-                &times;
-              </button>
-              <h2>{services[openModalIndex].title}</h2>
-              <p>{services[openModalIndex].texto}</p>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, "Servicos");
