@@ -1,5 +1,5 @@
-import React from "react";
-import { Tilt } from "react-tilt/dist/index.js"
+import PropTypes from "prop-types"; // Importando PropTypes
+import { Tilt } from "react-tilt/dist/index.js";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -67,13 +67,28 @@ const ProjectCard = ({
   );
 };
 
+// Adicionando validação de PropTypes
+ProjectCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  image: PropTypes.string.isRequired,
+  source_code_link: PropTypes.string.isRequired,
+};
+
 const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText}`}>Projetos</h2>
         <div className="flex items-center justify-center">
-        <p className={styles.sectionSubText}>Alguns projetos nossos</p>
+          <p className={styles.sectionSubText}>Alguns projetos nossos</p>
         </div>
       </motion.div>
 
