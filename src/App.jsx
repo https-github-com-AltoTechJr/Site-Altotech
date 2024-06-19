@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import './index.css'; 
+import "./index.css";
 
 import {
   About,
@@ -9,31 +9,36 @@ import {
   Navbar,
   Works,
   StarsCanvas,
+  Footer,
 } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary h-screen overflow-y-auto custom-scrollbar'>
-        <div className='bg-transparent bg-cover bg-no-repeat bg-center'>
+      <div className="relative z-0 bg-primary h-screen overflow-y-auto custom-scrollbar">
+        <div className="bg-transparent bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
           <StarsCanvas />
         </div>
-        <div className='relative z-0'>
-        <About/>
+        <div className="relative z-0">
+          <About />
           <StarsCanvas />
         </div>
-        <div className='relative z-0'>
-        <Feedbacks />
+        <div className="relative z-0">
+          <Feedbacks />
           <StarsCanvas />
         </div>
-        <div className='relative z-0'>
-        <Works />
+        <div className="relative z-0">
+          <Works />
           <StarsCanvas />
         </div>
-        <div className='relative z-0'>
+        <div className="relative z-0">
           <Contact />
+          <StarsCanvas />
+        </div>
+        <div className="relative z-0">
+          <Footer />
           <StarsCanvas />
         </div>
       </div>

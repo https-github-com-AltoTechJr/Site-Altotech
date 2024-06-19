@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { AstronautCanvas } from "./canvas"; 
+import { AstronautCanvas } from "./canvas";
 import { logogradient } from "../assets";
 
 const Hero = () => {
@@ -19,20 +19,22 @@ const Hero = () => {
               />
             </h1>
             <div className="mt-4 flex gap-4">
-              <button className="px-4 py-2 text-white rounded border border-[#F5F5F5] bg-transparent hover:bg-purpleclear transition duration-300">
+              <button className="px-4 py-2 text-white rounded border border-[#F5F5F5] bg-transparent hover:border-transparent hover:bg-purpleclear transition duration-300">
                 Website
               </button>
-              <button className="px-4 py-2 text-white rounded border border-[#F5F5F5] bg-transparent hover:bg-purpleclear transition duration-300">
+              <button className="px-4 py-2 text-white rounded border border-[#F5F5F5] bg-transparent hover:border-transparent hover:bg-purpleclear transition duration-300">
                 Apps
               </button>
-              <button className="px-4 py-2 text-white rounded border border-[#F5F5F5] bg-transparent hover:bg-purpleclear transition duration-300">
+              <button className="px-4 py-2 text-white rounded border border-[#F5F5F5] bg-transparent hover:border-transparent hover:bg-purpleclear transition duration-300">
                 Hubs
               </button>
             </div>
           </div>
-          
+
           {/* Div vermelha abaixo no mobile */}
-          <div className="w-full h-full sm:h-[50vh]"><AstronautCanvas /> </div>
+          <div className="w-full h-full sm:h-[50vh]">
+            <AstronautCanvas />{" "}
+          </div>
         </div>
       </div>
 

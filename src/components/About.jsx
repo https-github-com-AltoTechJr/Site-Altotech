@@ -20,9 +20,7 @@ const ServiceCard = ({ index, title }) => (
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px]"
     >
-      <div
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
+      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <h3 className="text-white text-[16px] font-semibold text-left h3-with-line">
           {title}
         </h3>
@@ -32,7 +30,7 @@ const ServiceCard = ({ index, title }) => (
           style={{ width: "100%", height: "6vh" }}
         >
           <button
-            onClick={() => window.location.href = '#Contato'}
+            onClick={() => (window.location.href = "#Contato")}
             className="bg-tertiary text-white w-full h-full flex justify-center items-center rounded-[10px]"
             style={{ width: "99%", height: "95%" }}
           >
@@ -53,7 +51,7 @@ ServiceCard.propTypes = {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} id="about">
         <h2 className={styles.sectionHeadText}>Serviços</h2>
         <div className="flex items-center justify-center">
           <p className={styles.sectionSubText}>Como Podemos Ajudar?</p>

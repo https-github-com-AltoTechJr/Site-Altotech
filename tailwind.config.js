@@ -14,6 +14,7 @@ module.exports = {
         purple: "#4E1352",
         purpleclear: "#680BAB",
         darkPurple: "#0A1020",
+        menuBg: "#6532D1",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
