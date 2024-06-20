@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { AstronautCanvas } from "./canvas";
 import { logogradient } from "../assets";
+import { slideIn } from "../utils/motion";
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} px-1 flex flex-col gap-5">
         <div className="mt-20 grid grid-cols-1 sm:grid-cols-[1fr,1fr] lg:grid-cols-[1fr,1fr] gap-14">
           {/* Conteúdo à esquerda */}
-          <div className="flex flex-col gap-14">
+          <div className="flex flex-col gap-7 xs:gap-14">
             <h1 className={`${styles.heroHeadText} font-semibold text-white`}>
               A solução em TI <br /> para você!
               <img
@@ -32,13 +33,17 @@ const Hero = () => {
           </div>
 
           {/* Div vermelha abaixo no mobile */}
-          <div className="w-full h-full sm:h-[50vh]">
-            <AstronautCanvas />{" "}
-          </div>
+          <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className='xl:flex-1 xl:h-600px md:h-[450px] h-[350px]'
+      >
+        <AstronautCanvas />
+      </motion.div>
+          
         </div>
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-32 bottom-0 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

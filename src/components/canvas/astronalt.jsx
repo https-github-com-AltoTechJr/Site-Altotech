@@ -38,8 +38,8 @@ const Astronaut = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={astronaut.scene}
-        scale={isMobile ? 2.4 : 2.6}
-        position={isMobile ? [0, -4 + positionY, -0.5] : [0, -4.5 + positionY, -0.5]}
+        scale={isMobile ? 2.5 : 2.6}
+        position={isMobile ? [0, -4 + positionY, -1.5] : [0, -4.5 + positionY, -0.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
