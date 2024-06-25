@@ -11,7 +11,7 @@ const FeedbackCard = ({
   name,
   designation,
   company,
-  image,
+  empresa,
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -20,23 +20,17 @@ const FeedbackCard = ({
     <p className='text-white font-black text-[48px]'>&quot;</p>
 
     <div className='mt-1'>
-      <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
+      <p className='text-white text-start tracking-wider text-[18px]'>{testimonial}</p>
 
       <div className='mt-7 flex justify-between items-center gap-2'>
         <div className='flex-1 flex flex-col'>
           <p className='text-white font-medium text-[16px]'>
-            <span className='blue-text-gradient'>@</span> {name}
+            <span className='blue-text-gradient'>@</span> {empresa}
           </p>
           <p className='mt-1 text-secondary text-[12px]'>
-            {designation} de {company}
+          {name}: {designation} do {company}
           </p>
         </div>
-
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className='w-10 h-10 rounded-full object-cover'
-        />
       </div>
     </div>
   </motion.div>
@@ -49,6 +43,7 @@ FeedbackCard.propTypes = {
   name: PropTypes.string.isRequired,
   designation: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
+  empresa: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
 

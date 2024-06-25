@@ -1,5 +1,4 @@
 import logo from "./altotech-minilogo.svg";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import job1 from "./Trabalho1.png";
@@ -11,7 +10,6 @@ import logogradient from "./logogradient.png";
 
 export {
   logo,
-  github,
   menu,
   close,
   job1,
