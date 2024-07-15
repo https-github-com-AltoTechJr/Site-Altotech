@@ -61226,10 +61226,6 @@ const aX = () =>
                       }),
                       q.jsx("p", {
                         className: "font-semibold",
-                        children: "cmpf@ufersa.edu.br",
-                      }),
-                      q.jsx("p", {
-                        className: "font-semibold",
                         children: "https://paudosferros.ufersa.edu.br",
                       }),
                     ],
@@ -61247,11 +61243,11 @@ const aX = () =>
                     children: [
                       q.jsx("p", {
                         className: "font-semibold",
-                        children: "Endereço: BR-226, s/n - Bairro: São Geraldo",
+                        children: "Pau dos Ferros - RN: BR-226, s/n - Bairro: São Geraldo",
                       }),
                       q.jsx("p", {
                         className: "font-semibold",
-                        children: "Pau dos Ferros - RN",
+                        children: "Campus UFERSA: Prédio: LTI, Sala: Nits",
                       }),
                       q.jsx("p", {
                         className: "font-semibold",
@@ -61277,11 +61273,6 @@ const aX = () =>
                         children: q.jsx(rX, { size: 25 }),
                       }),
                       q.jsx("a", {
-                        href: "#",
-                        className: "hover:scale-125 transition-all",
-                        children: q.jsx(iX, { size: 25 }),
-                      }),
-                      q.jsx("a", {
                         href: "https://www.linkedin.com/in/altotech-solu%C3%A7%C3%B5es-em-ti-60116a281/",
                         target: "_blank",
                         className: "hover:scale-125 transition-all",
@@ -61299,7 +61290,7 @@ const aX = () =>
               q.jsx(oX, {}),
               q.jsx("p", {
                 className: "font-semibold text-lg",
-                children: "2023 AltoTech Todos os direitos reservados",
+                children: "2024 AltoTech Todos os direitos reservados",
               }),
             ],
           }),
