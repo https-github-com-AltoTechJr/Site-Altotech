@@ -22,7 +22,6 @@ const Footer = () => {
 
             <div className="space-y-3 mt-8">
               <p className="font-semibold">(84) 3317-8512</p>
-              <p className="font-semibold">cmpf@ufersa.edu.br</p>
               <p className="font-semibold">
                 https://paudosferros.ufersa.edu.br
               </p>
@@ -33,10 +32,8 @@ const Footer = () => {
             <h2 className="font-bold text-3xl">Localização</h2>
 
             <div className="space-y-3 mt-8">
-              <p className="font-semibold">
-                Endereço: BR-226, s/n - Bairro: São Geraldo
-              </p>
-              <p className="font-semibold">Pau dos Ferros - RN</p>
+              <p className="font-semibold">Pau dos Ferros - RN, BR-226, s/n - Bairro: São Geraldo</p>
+              <p className="font-semibold">Campus UFERSA: Prédio LTI, Sala Nits</p>
               <p className="font-semibold">CEP: 59900-000</p>
             </div>
           </div>
@@ -52,9 +49,6 @@ const Footer = () => {
               >
                 <FaInstagram size={25} />
               </a>
-              <a href="#" className="hover:scale-125 transition-all">
-                <FaFacebook size={25} />
-              </a>
               <a
                 href="https://www.linkedin.com/in/altotech-solu%C3%A7%C3%B5es-em-ti-60116a281/"
                 target="_blank"
@@ -69,7 +63,7 @@ const Footer = () => {
         <div className="mt-32 flex items-center gap-2">
           <FaCopyright />
           <p className="font-semibold text-lg">
-            2023 AltoTech Todos os direitos reservados
+            2024 AltoTech Todos os direitos reservados
           </p>
         </div>
       </footer>
